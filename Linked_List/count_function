@@ -8,3 +8,10 @@ int count(struct Node *p)
  }
  return l;
 }
+int Rcount(struct Node *p)
+{
+ if(p!=NULL)
+ return Rcount(p->next)+1;
+ else
+ return 0;
+}
